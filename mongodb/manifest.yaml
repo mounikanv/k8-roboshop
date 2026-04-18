@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
  # deployment labels
   name: mongodb
+  namespace: roboshop
   labels:
    component: mongodb
    project: roboshop
