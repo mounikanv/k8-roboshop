@@ -42,6 +42,9 @@ spec:
       containers:
       - name: catalogue
         image: 9347673562/catalogue:v1
+        envFrom:
+        - configMapRef:
+            name: catalogue
 ---
 apiVersion: v1
 kind: Service
