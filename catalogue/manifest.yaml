@@ -20,7 +20,7 @@ spec:
   template:
     metadata:
       labels:
-        component:catalogue
+        component: catalogue
         project: roboshop
         tier: app
     spec:
