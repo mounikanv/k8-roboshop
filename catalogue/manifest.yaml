@@ -44,6 +44,9 @@ spec:
         envFrom:
         - configMapRef:
             name: catalogue
+        securityContext:
+         runAsUser: 0
+         runAsNonRoot: false
 ---
 apiVersion: v1
 kind: Service
