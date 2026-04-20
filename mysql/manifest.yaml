@@ -11,6 +11,7 @@ metadata:
 type: Opaque
 data:
   MYSQL_ROOT_PASSWORD: "Um9ib3Nob3BAMQ=="
+---  
 spec:
   replicas: 1
     # These are the labels replica set use to create pod replicas, this should match pod labels
