@@ -33,6 +33,7 @@ spec:
     # This is pod definition
   template:
     metadata:
+     labels:
       component: user
       project: roboshop
       tier: app
@@ -42,7 +43,7 @@ spec:
         image: 9347673562/user:v1
         envFrom:
         - configMapRef:
-            name: user
+          name: user
 ---
 apiVersion: v1
 kind: Service
