@@ -8,7 +8,7 @@ metadata:
    component: mysql
    project: roboshop
    tier: database
-   type: Opaque
+type: Opaque
 data:
   MYSQL_ROOT_PASSWORD: "Um9ib3Nob3BAMQ=="
 spec:
