@@ -28,7 +28,7 @@ spec:
         tier: database
     spec:
       containers:
-      - name: nginx
+      - name: mysql
         image: 9347673562/mysql:v1
         envFrom:
         - secretRef:
