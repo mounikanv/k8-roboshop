@@ -11,6 +11,16 @@ type: Opaque
 data:
   MYSQL_ROOT_PASSWORD: "Um9ib1Nob3BAMQ=="
 ---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysql
+  namespace: roboshop
+  # deployment labels
+  labels:
+    component: mysql
+    project: roboshop
+    tier: database
 spec:
   replicas: 1
     # These are the labels replica set use to create pod replicas, this should match pod labels
