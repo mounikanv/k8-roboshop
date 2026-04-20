@@ -6,4 +6,4 @@ metadata:
 spec:
   containers:
   - name: debug
-    image: 9951296461/debug:v1
+    image: 9347673562/debug:v1
