@@ -13,7 +13,7 @@ data:
   RABBITMQ_DEFAULT_USER: cm9ib3Nob3AxMjM=
   RABBITMQ_DEFAULT_PASS: Y205aWIzTm9iM0F4TWpNPQ==
 ---
-apiVersion: v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: roboshop
