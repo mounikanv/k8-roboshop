@@ -60,6 +60,9 @@ spec:
       containers:
       - name: payment
         image: 9347673562/payment:v1
+        securityContext:
+          runAsUser: 0
+          runAsNonRoot: false
         envFrom:
         - configMapRef:
             name: payment
