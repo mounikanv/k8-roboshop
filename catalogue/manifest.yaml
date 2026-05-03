@@ -16,27 +16,26 @@ kind: Deployment
 metadata:
   name: catalogue
   namespace: roboshop
+  # deployment labels
   labels:
     component: catalogue
     project: roboshop
     tier: app
-
 spec:
   replicas: 1
-
+  # These are the labels replica set use to create pod replicas, this should match pod labels
   selector:
     matchLabels:
       component: catalogue
       project: roboshop
       tier: app
-
+  # This is pod definition
   template:
     metadata:
       labels:
         component: catalogue
         project: roboshop
         tier: app
-
     spec:
       containers:
       - name: catalogue
@@ -44,7 +43,6 @@ spec:
         envFrom:
         - configMapRef:
             name: catalogue
-         
 ---
 apiVersion: v1
 kind: Service
@@ -60,8 +58,7 @@ spec:
     component: catalogue
     project: roboshop
     tier: app
-
   ports:
   - protocol: TCP
-    port: 8080
-    targetPort: 8080
+    port: 8080 # service port
+    targetPort: 8080 # container port
