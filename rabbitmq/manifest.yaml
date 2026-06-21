@@ -16,7 +16,7 @@ data:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: roboshop
+  name: rabbitmq
   namespace: roboshop
   labels:
     component: rabbitmq
