@@ -10,8 +10,8 @@ metadata:
    tier: database
 type: Opaque
 data:
-  RABBITMQ_DEFAULT_USER: cm9ib3Nob3AxMjM=
-  RABBITMQ_DEFAULT_PASS: Y205aWIzTm9iM0F4TWpNPQ==
+  RABBITMQ_DEFAULT_USER: "cm9ib3Nob3A="
+  RABBITMQ_DEFAULT_PASS: "cm9ib3Nob3AxMjM="
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -49,6 +49,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: rabbitmq
+  namespace: roboshop
+  
   labels:
    component: rabbitmq
    project: roboshop
